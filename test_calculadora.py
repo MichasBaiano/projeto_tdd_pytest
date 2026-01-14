@@ -79,3 +79,21 @@ class TestCalculadora:
         # O teste passa se o código lançar o erro ZeroDivisionError
         with pytest.raises(ZeroDivisionError):
             self.calc.dividir(10, 0)
+    
+    
+      # --- IsPar ---       
+         
+    # Cenário 1: Retornar True para números pares
+    def test_is_par_verdadeiro(self):
+        # 4 é par -> True
+        assert self.calc.isPar(4) is True
+
+    # Cenário 2: Retornar False para números ímpares
+    def test_is_par_falso(self):
+        # 5 é ímpar -> False
+        assert self.calc.isPar(5) is False
+
+    # Cenário 3: Funcionar corretamente com zero (que é par)
+    def test_is_par_zero(self):
+        # 0 é par -> True
+        assert self.calc.isPar(0) is True
