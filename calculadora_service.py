@@ -17,3 +17,7 @@ class CalculadoraService:
         if b == 0:
             raise ZeroDivisionError("Não é possível dividir por zero")
         return a / b
+    
+    # Método IsPar
+    def isPar(self, numero):
+        return numero % 2 == 0
