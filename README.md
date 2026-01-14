@@ -13,7 +13,7 @@
 
 ## 🎯 Sobre o Projeto
 
-Este projeto consiste no desenvolvimento de um módulo de calculadora utilizando estritamente a metodologia **TDD (Test Driven Development)**. [cite_start]O objetivo foi aplicar o ciclo **Red → Green → Refactor** para garantir a confiabilidade e qualidade do código desde a primeira linha[cite: 10, 13, 21].
+Este projeto consiste no desenvolvimento de um módulo de calculadora utilizando estritamente a metodologia **TDD (Test Driven Development)**. O objetivo foi aplicar o ciclo **Red → Green → Refactor** para garantir a confiabilidade e qualidade do código desde a primeira linha.
 
 O sistema inclui operações matemáticas básicas, validações de regras de negócio (como divisão por zero e paridade de inteiros) e uma interface de linha de comando (CLI) para demonstração.
 
