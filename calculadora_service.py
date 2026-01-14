@@ -31,7 +31,13 @@ class CalculadoraService:
         return a / b
 
     def isPar(self, numero: int) -> bool:
-        """Retorna True se o número for par, caso contrário False."""
+        """
+        Retorna True se o número for par, caso contrário False.
+        Lança ValueError se receber um número decimal
+        """
+        if isinstance(numero, float) and not numero.is_integer():
+            raise ValueError("O conceito de par/ímpar aplica-se apenas a números inteiros.")
+        
         return numero % 2 == 0
 
     def validarNumeroPositivo(self, numero: Numero) -> bool:

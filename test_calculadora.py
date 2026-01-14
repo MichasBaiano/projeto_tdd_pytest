@@ -96,7 +96,6 @@ class TestCalculadora:
     def test_is_par_zero(self):
         assert self.calc.isPar(0) is True        # 0 é par -> True
         
-    
     # Cenário 4: # O sistema deve impedir verificar paridade de 4.5
     def test_is_par_erro_decimal(self):
         with pytest.raises(ValueError):
