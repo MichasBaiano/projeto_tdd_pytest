@@ -7,3 +7,7 @@ class CalculadoraService:
     # Método Subtrair
     def subtrair(self, a, b):
         return a - b
+    
+    # Método Multiplicar
+    def multiplicar(self, a, b):
+        return a * b
