@@ -2,7 +2,7 @@
 
 > **Disciplina:** Engenharia de Software III  
 > **Professor:** Willyams Saraiva  
-> **Aluno:** Michel Jr  
+> **Alunos:** Ananias Carlos, Davi Carreiro, Michel Jr, Sidney Nascimento
 > **Tecnologia:** Python + PyTest
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)
@@ -60,7 +60,7 @@ projeto_tdd_pytest/
 ├── test_calculadora.py      # Testes Unitários (PyTest)
 ├── app.py                   # Interface Interativa (CLI)
 └── README.md                # Documentação
-
+```
 ---
 
 ## 🚀 Como Executar o Projeto
