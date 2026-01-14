@@ -81,19 +81,31 @@ class TestCalculadora:
             self.calc.dividir(10, 0)
     
     
-      # --- IsPar ---       
+    # --- IsPar ---       
          
     # Cenário 1: Retornar True para números pares
     def test_is_par_verdadeiro(self):
-        # 4 é par -> True
-        assert self.calc.isPar(4) is True
+        assert self.calc.isPar(4) is True        # 4 é par -> True
 
     # Cenário 2: Retornar False para números ímpares
     def test_is_par_falso(self):
-        # 5 é ímpar -> False
-        assert self.calc.isPar(5) is False
+        assert self.calc.isPar(5) is False       # 5 é ímpar -> False
 
     # Cenário 3: Funcionar corretamente com zero (que é par)
     def test_is_par_zero(self):
-        # 0 é par -> True
-        assert self.calc.isPar(0) is True
+        assert self.calc.isPar(0) is True        # 0 é par -> True
+        
+    
+    # --- validarNumeroPositivo(numero) ---       
+
+    # Cenário 1: Retornar verdadeiro para números positivos
+    def test_validar_positivo_verdadeiro(self):
+        assert self.calc.validarNumeroPositivo(5) is True    # 5 é positivo -> True
+
+    # Cenário 2: Retornar falso para números negativos
+    def test_validar_positivo_falso_negativo(self):
+        assert self.calc.validarNumeroPositivo(-5) is False  # -5 não é positivo -> False
+
+    # Cenário 3: Lançar exceção ou retornar falso para zero
+    def test_validar_positivo_falso_zero(self):
+        assert self.calc.validarNumeroPositivo(0) is False   # 0 não é positivo (regra escolhida) -> False
