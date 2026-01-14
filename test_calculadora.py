@@ -7,6 +7,8 @@ class TestCalculadora:
     def setup_method(self):
         self.calc = CalculadoraService()
 
+    # --- SOMAR ---
+
     # Cenário 1: Soma de dois números positivos 
     def test_somar_dois_positivos(self):
         resultado = self.calc.somar(2, 3)
@@ -20,4 +22,21 @@ class TestCalculadora:
     # Cenário 3: Soma de dois zeros 
     def test_somar_dois_zeros(self):
         resultado = self.calc.somar(0, 0)
+        assert resultado == 0
+        
+    # --- SUBTRAIR ---
+
+    # Cenário 1: Subtração simples
+    def test_subtrair_correto(self):
+        resultado = self.calc.subtrair(10, 5)
+        assert resultado == 5
+
+    # Cenário 2: Resultado negativo
+    def test_subtrair_resultado_negativo(self):
+        resultado = self.calc.subtrair(3, 5)
+        assert resultado == -2
+
+    # Cenário 3: Valores iguais (deve dar zero)
+    def test_subtrair_valores_iguais(self):
+        resultado = self.calc.subtrair(10, 10)
         assert resultado == 0
