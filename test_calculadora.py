@@ -86,6 +86,7 @@ class TestCalculadora:
     # Cenário 1: Retornar True para números pares
     def test_is_par_verdadeiro(self):
         assert self.calc.isPar(4) is True        # 4 é par -> True
+        assert self.calc.isPar(4.0) is True      # 4.0 matematicamente é inteiro
 
     # Cenário 2: Retornar False para números ímpares
     def test_is_par_falso(self):
@@ -95,6 +96,12 @@ class TestCalculadora:
     def test_is_par_zero(self):
         assert self.calc.isPar(0) is True        # 0 é par -> True
         
+    
+    # Cenário 4: # O sistema deve impedir verificar paridade de 4.5
+    def test_is_par_erro_decimal(self):
+        with pytest.raises(ValueError):
+            self.calc.isPar(4.5)
+            
     
     # --- validarNumeroPositivo(numero) ---       
 
