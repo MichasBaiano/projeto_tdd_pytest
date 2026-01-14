@@ -40,3 +40,20 @@ class TestCalculadora:
     def test_subtrair_valores_iguais(self):
         resultado = self.calc.subtrair(10, 10)
         assert resultado == 0
+        
+    # --- Multiplicar ---
+    
+    # Cenário 1: Multiplicação de dois positivos
+    def test_multiplicar_positivos(self):
+        resultado = self.calc.multiplicar(3, 4)
+        assert resultado == 12
+
+    # Cenário 2: Retornar zero quando um dos valores for zero
+    def test_multiplicar_com_zero(self):
+        resultado = self.calc.multiplicar(5, 0)
+        assert resultado == 0
+
+    # Cenário 3: Funcionar com números negativos
+    def test_multiplicar_negativo(self):
+        resultado = self.calc.multiplicar(3, -2)
+        assert resultado == -6
