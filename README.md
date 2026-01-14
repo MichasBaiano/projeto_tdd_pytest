@@ -2,7 +2,7 @@
 
 > **Disciplina:** Engenharia de Software III  
 > **Professor:** Willyams Saraiva  
-> **Alunos:** Ananias Carlos, Davi Carreiro, Michel Jr, Sidney Nascimento
+> **Alunos:** Ananias Carlos, Davi Carreiro, Michel Jr, Sidney Nascimento —
 > **Tecnologia:** Python + PyTest
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)
@@ -21,18 +21,18 @@ O sistema inclui operações matemáticas básicas, validações de regras de ne
 
 ## 📝 Relatório da Aplicação do TDD
 
-[cite_start]Conforme solicitado nos critérios de avaliação, segue o resumo da experiência:
+Conforme solicitado nos critérios de avaliação, segue o resumo da experiência:
 
-### [cite_start]1. O que é TDD? [cite: 67]
+### 1. O que é TDD? [cite: 67]
 O *Test Driven Development* (Desenvolvimento Orientado a Testes) é uma prática de engenharia de software onde os testes automatizados são escritos **antes** do código de produção. Ele inverte a ordem tradicional de desenvolvimento, focando primeiro no comportamento desejado e depois na implementação.
 
-### [cite_start]2. Como o TDD foi aplicado? [cite: 69]
+### 2. Como o TDD foi aplicado?
 Seguimos rigorosamente o ciclo de 3 passos:
 1.  🔴 **RED:** Escrevemos um teste falho no `test_calculadora.py` para uma nova funcionalidade (ex: `somar`).
 2.  🟢 **GREEN:** Implementamos o código mínimo em `calculadora_service.py` para fazer o teste passar.
 3.  🔵 **REFACTOR:** Melhoramos o código (adicionando *Type Hints* e tratamento de erros) sem alterar o comportamento, garantido pelos testes que continuaram passando.
 
-### [cite_start]3. Dificuldades e Benefícios [cite: 70, 71]
+### 3. Dificuldades e Benefícios
 * **Dificuldade:** A principal dificuldade foi a mudança de mentalidade de não escrever a lógica imediatamente. Foi necessário "segurar a ansiedade" para escrever o teste primeiro. Também houve o desafio de definir regras matemáticas estritas (ex: paridade apenas para inteiros).
 * **Benefícios:** O código nasceu testado e documentado. Quando precisamos alterar a lógica do `isPar` para rejeitar decimais, os testes existentes garantiram que nada mais quebrasse. A confiança na entrega é muito maior.
 
@@ -40,12 +40,12 @@ Seguimos rigorosamente o ciclo de 3 passos:
 
 ## 🛠️ Funcionalidades Implementadas
 
-[cite_start]A classe `CalculadoraService` atende aos seguintes requisitos[cite: 27]:
+A classe `CalculadoraService` atende aos seguintes requisitos:
 
 * ✅ **Somar:** Soma de positivos, negativos e zeros.
 * ✅ **Subtrair:** Subtração com suporte a resultados negativos.
 * ✅ **Multiplicar:** Regra de sinais e multiplicação por zero.
-* [cite_start]✅ **Dividir:** Suporte a decimais e bloqueio de **Divisão por Zero** (`ZeroDivisionError`)[cite: 50].
+* ✅ **Dividir:** Suporte a decimais e bloqueio de **Divisão por Zero** (`ZeroDivisionError`).
 * ✅ **Verificar Paridade (`isPar`):** Validação estrita (apenas números inteiros). Lança erro se receber float (ex: `4.5`).
 * ✅ **Validar Positivo:** Retorna `False` para zero e negativos.
 
@@ -75,10 +75,10 @@ Clone o repositório e instale a única dependência (PyTest):
 
 ```bash
 # Clone o projeto
-git clone [https://github.com/seu-usuario/projeto_tdd_pytest.git](https://github.com/seu-usuario/projeto_tdd_pytest.git)
+git clone [https://github.com/MichasBaiano/projeto_tdd_pytest.git](https://github.com/MichasBaiano/projeto_tdd_pytest.git)
 cd projeto_tdd_pytest
 
-# Crie um ambiente virtual (Opcional, mas recomendado)
+# Crie um ambiente virtual
 python -m venv venv
 # Windows:
 venv\Scripts\activate
