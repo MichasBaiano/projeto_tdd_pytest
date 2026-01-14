@@ -21,3 +21,7 @@ class CalculadoraService:
     # Método IsPar
     def isPar(self, numero):
         return numero % 2 == 0
+    
+    # Método validarNumeroPositivo
+    def validarNumeroPositivo(self, numero):
+        return numero > 0
