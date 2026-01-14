@@ -23,7 +23,7 @@ O sistema inclui operações matemáticas básicas, validações de regras de ne
 
 Conforme solicitado nos critérios de avaliação, segue o resumo da experiência:
 
-### 1. O que é TDD? [cite: 67]
+### 1. O que é TDD?
 O *Test Driven Development* (Desenvolvimento Orientado a Testes) é uma prática de engenharia de software onde os testes automatizados são escritos **antes** do código de produção. Ele inverte a ordem tradicional de desenvolvimento, focando primeiro no comportamento desejado e depois na implementação.
 
 ### 2. Como o TDD foi aplicado?
