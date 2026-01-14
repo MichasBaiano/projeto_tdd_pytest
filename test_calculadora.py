@@ -69,12 +69,12 @@ class TestCalculadora:
         resultado = self.calc.dividir(10, 2)
         assert resultado == 5
 
-    # Cenário 2: Lançar exceção ao dividir por zero
+    # Cenário 2: Funcionar com números decimais  
     def test_dividir_decimais(self):
         resultado = self.calc.dividir(10, 4)
         assert resultado == 2.5
 
-    # Cenário 3: Funcionar com números decimais
+    # Cenário 3:Lançar exceção ao dividir por zero
     def test_dividir_por_zero(self):
         # O teste passa se o código lançar o erro ZeroDivisionError
         with pytest.raises(ZeroDivisionError):
