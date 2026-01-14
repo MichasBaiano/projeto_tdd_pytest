@@ -11,3 +11,9 @@ class CalculadoraService:
     # Método Multiplicar
     def multiplicar(self, a, b):
         return a * b
+    
+    # Método Dividir
+    def dividir(self, a, b):
+        if b == 0:
+            raise ZeroDivisionError("Não é possível dividir por zero")
+        return a / b
